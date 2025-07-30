@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="Entities.Bodega" Collapsed="true">
+    <Position X="14" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAACAAgAAAAAAAAAAgAAAAAQAAAAA=</HashCode>
+      <FileName>Bodega.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Entities.Cliente">
+    <Position X="11.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Cliente.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Entities.DetalleEntrega" Collapsed="true">
+    <Position X="15.75" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAAAAQAAAAAAAgCAAAAQAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>DetalleEntrega.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Entities.DetalleVenta" Collapsed="true">
+    <Position X="17.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQACEAAAEEAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>DetalleVenta.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Entities.Empleado" Collapsed="true">
+    <Position X="9.25" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAMIAAAAgAAAAAAAAAAAAAEAAAAAhAAAAAAAAAAA=</HashCode>
+      <FileName>Empleado.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Entities.ProcesoEntrega" Collapsed="true">
+    <Position X="14" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAEAAAAAAAAAAAAAAAAEgAAAAAAAAAAQAAAAAAAAAAA=</HashCode>
+      <FileName>ProcesoEntrega.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Entities.Producto" Collapsed="true">
+    <Position X="15.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACEAAAAAgAAAAAAAgAARAAAAAAAgAAAAAQAAAAA=</HashCode>
+      <FileName>Producto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Entities.Proveedor" Collapsed="true">
+    <Position X="17.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAgAAAACAAgAAAAAAAAAAAAAAQAkAAAAA=</HashCode>
+      <FileName>Proveedor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Entities.Usuario" Collapsed="true">
+    <Position X="10.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAACAAAAAEAEAAAAAAAAAAAAAAAAAAAgAAAAI=</HashCode>
+      <FileName>Usuario.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Entities.Venta" Collapsed="true">
+    <Position X="14" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAgAKAAAIAAAAAAAAAAAAgAAAAABAAAAAA=</HashCode>
+      <FileName>Venta.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="Entities.EstadoVenta" Collapsed="true">
+    <Position X="14" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QABAAAAAAABEEAAACAgAICAAEAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>EstadoVenta.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Entities.TipoCliente" Collapsed="true">
+    <Position X="15.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEBAAEAAkAAAAAAAAAAAAAAAAAACAAAAAAA=</HashCode>
+      <FileName>TipoCliente.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Entities.TipoEmpleado" Collapsed="true">
+    <Position X="17.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAIQgAAABAAAAAQBAAAIAAAAAAAAAAAAAgAAABAAA=</HashCode>
+      <FileName>TipoEmpleado.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
