@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Authorization;
+﻿using Entities;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -35,6 +36,22 @@ namespace PoliMarket.Controllers
             catch (Exception ex)
             { return StatusCode(500, "Error interno del servidor: " + ex.Message); }
             return Ok(productos);
+        }
+
+        [HttpPost("SolicitarStock")]
+        public IActionResult SolicitarStock(Entities.Producto producto)
+        {
+            bool result = false;
+            try
+            {
+                var authorizationHeader = HttpContext.Request.Headers["Authorization"].FirstOrDefault();
+                Empleado empleadoRRHH = ObtenerUsuarioToken(authorizationHeader);
+                BodegaFacade.BodegaFacade bodegaFacade = new BodegaFacade.BodegaFacade();
+                result = bodegaFacade.SolicitarStock(empleadoRRHH.IdEmpleado, producto);
+            }
+            catch (Exception ex)
+            { return StatusCode(500, "Error interno del servidor: " + ex.Message); }
+            return Ok(result);
         }
         #endregion
     }

@@ -1,6 +1,6 @@
 ﻿namespace TareaDAL
 {
-    public class TareaDAL
+    public class TareaDAL : BaseDAL
     {
 
     }

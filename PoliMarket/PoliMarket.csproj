@@ -17,6 +17,7 @@
     <ProjectReference Include="..\BodegaFacade\BodegaFacade.csproj" />
     <ProjectReference Include="..\Entities\Entities.csproj" />
     <ProjectReference Include="..\EntregaFacade\EntregaFacade.csproj" />
+    <ProjectReference Include="..\ProveedorFacade\ProveedorFacade.csproj" />
     <ProjectReference Include="..\SeguridadFacade\SeguridadFacade.csproj" />
     <ProjectReference Include="..\VentaFacade\VentaFacade.csproj" />
   </ItemGroup>

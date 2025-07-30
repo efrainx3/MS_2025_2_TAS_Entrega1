@@ -7,8 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Entities\Entities.csproj" />
-    <ProjectReference Include="..\EnvioDAL\EntregaDAL.csproj" />
+    <ProjectReference Include="..\ProveedorDAL\ProveedorDAL.csproj" />
   </ItemGroup>
 
 </Project>

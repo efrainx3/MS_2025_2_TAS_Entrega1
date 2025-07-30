@@ -51,6 +51,36 @@ namespace ProductoDAL
             }
             return lstProductos;
         }
+
+        public bool ActualizarStockPorVenta(Entities.Venta venta)
+        {
+            bool resultado = false;
+            var param = new
+            {
+                venta.IdVenta,
+            };
+            using (var conn = ObtenerConexion())
+            {
+                conn.Execute("SP_Actualizar_Stock_Por_Venta", param, commandType: System.Data.CommandType.StoredProcedure);
+            }
+            return resultado;
+        }
+
+        public bool SolicitarStock(Guid idEmpleado, Entities.Producto producto) { 
+            bool resultado = false;
+            var param = new
+            {
+                IdEmpleado = idEmpleado,
+                producto.IdProducto,
+            };
+            using (var conn = ObtenerConexion())
+            {
+                conn.Execute("SP_Solicitar_Stock", param, commandType: System.Data.CommandType.StoredProcedure);
+                resultado = true;
+            }
+            return resultado;
+        }
+
         #endregion
     }
 }

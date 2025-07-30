@@ -1,4 +1,6 @@
-﻿namespace VentaFacade
+﻿using BodegaFacade;
+
+namespace VentaFacade
 {
     public class VentaFacade
     {
@@ -24,8 +26,15 @@
             VentaBL.VentaBL ventaBL = new VentaBL.VentaBL();
             if (ventaBL.FacturarVenta(venta))
             {
-
-                return true;
+                BodegaFacade.BodegaFacade bodegaFacade = new BodegaFacade.BodegaFacade();
+                if (bodegaFacade.ActualizarStockPorVenta(venta))
+                {
+                    return true;
+                }
+                else
+                {
+                    throw new Exception("Error al actualizar el stock por la venta.");
+                }
             }
             else
             {

@@ -43,7 +43,6 @@ namespace PoliMarket.Controllers
                     return BadRequest("El empleado vendedor no puede ser nulo.");
                 }
                 var authorizationHeader = HttpContext.Request.Headers["Authorization"].FirstOrDefault();
-
                 Empleado empleadoRRHH = ObtenerUsuarioToken(authorizationHeader);
                 EmpleadoFacade empleadoFacade = new EmpleadoFacade();
                 result = empleadoFacade.HabilitarEmpleadoVendedor(empleadoRRHH, empleadoVendedor);

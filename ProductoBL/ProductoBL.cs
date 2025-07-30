@@ -21,6 +21,18 @@ namespace ProductoBL
             return ProductoDAL.ConsultarProductosDisponibles();
         }
 
+        public bool ActualizarStockPorVenta(Entities.Venta venta)
+        {
+            ProductoDAL.ProductoDAL ProductoDAL = new ProductoDAL.ProductoDAL();
+            return ProductoDAL.ActualizarStockPorVenta(venta);
+        }
+
+        public bool SolicitarStock(Guid idEmpleado, Entities.Producto producto)
+        {
+            ProductoDAL.ProductoDAL ProductoDAL = new ProductoDAL.ProductoDAL();
+            return ProductoDAL.SolicitarStock(idEmpleado, producto);
+        }
+
         #endregion
     }
 }

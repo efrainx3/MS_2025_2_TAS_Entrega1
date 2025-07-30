@@ -14,7 +14,7 @@ namespace Entities
         Administrador = 4,
         Asistente = 5,
         Supervisor = 6,
-        Tecnico = 7,
+        Almacen = 7,
         Entregas = 8,
         Conductor = 9,
         Otro = 10

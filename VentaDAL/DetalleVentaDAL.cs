@@ -18,7 +18,8 @@ namespace VentaDAL
         {
             // Inicialización de la clase, si es necesario
         }
-        // Aquí puedes definir los métodos necesarios para la clase DetalleVentaDAL
+        #endregion
+        #region [Métodos]
         public bool CrearDetalleVenta(Entities.Venta venta)
         {
             bool resultado = false;

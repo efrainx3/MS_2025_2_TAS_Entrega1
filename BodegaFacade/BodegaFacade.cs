@@ -19,10 +19,16 @@
             return ProductoBL.ConsultarProductosDisponibles();
         }
 
-        public bool ActualizarStockPorVenta()
+        public bool ActualizarStockPorVenta(Entities.Venta venta)
         {
             ProductoBL.ProductoBL ProductoBL = new ProductoBL.ProductoBL();
-            return ProductoBL.ConsultarProductosDisponibles();
+            return ProductoBL.ActualizarStockPorVenta(venta);
+        }
+
+        public bool SolicitarStock(Guid idEmpleado, Entities.Producto producto)
+        {
+            ProductoBL.ProductoBL ProductoBL = new ProductoBL.ProductoBL();
+            return ProductoBL.SolicitarStock(idEmpleado, producto);
         }
 
         #endregion
