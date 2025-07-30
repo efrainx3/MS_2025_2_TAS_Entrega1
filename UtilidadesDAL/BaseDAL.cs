@@ -11,7 +11,7 @@ namespace UtilidadesDAL
         #region [ Constructor ]
         public BaseDAL()
         {
-            cadenaConexion = "Data Source=EFRAZENBOOK\\ZENBOOKSQL;Initial Catalog=PoliMarket;User ID=AppUser;Password=Clave123;Encrypt=True;Trust Server Certificate=True";
+            cadenaConexion = "Data Source=EFRAZENBOOK\\ZENBOOKSQL;Initial Catalog=PoliMarket;User ID=AppUser;Password=C************3;Encrypt=True;Trust Server Certificate=True";
         }
         #endregion
 
